@@ -1,0 +1,22 @@
+* {
+  font-family: inherit sans-serif;
+  color: #fff;
+}
+body {
+  background-color: cadetblue;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: blue;
+}
+
+h1 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 50px;
+  border: 20px solid;
+  border-radius: 60px;
+}
