@@ -1,0 +1,116 @@
+.border_1 {
+  display: flex;
+  border-style: dotted;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.border_2 {
+  display: flex;
+  border-style: double;
+  margin: auto;
+  justify-content: center;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.border_3 {
+  display: flex;
+  border-style: groove;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.border_4 {
+  display: flex;
+  border-style: ridge;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.border_5 {
+  display: flex;
+  border-style: inset;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.border_6 {
+  display: flex;
+  border-style: outset;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.border_7 {
+  display: flex;
+  border-style: dashed;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.border_8 {
+  display: flex;
+  border-style: solid;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}  
+
+.border_9 {
+  display: flex;
+  border-style: solid;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 30px solid greenyellow;
+}  
+
+.border_10 {
+  display: flex;
+  border-style: solid;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-top: 30px solid rebeccapurple;
+}  
+
+.border_11 {
+  display: flex;
+  border-style: solid;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 30px solid transparent;
+  background-color: rgb(150,215,255);
+  border-image: url("./src/img/border.png") 150 round;
+}  
+
+.border_12 {
+  display: flex;
+  border-style: solid;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 30px solid greenyellow;
+  border-radius: 20px;
+} 
+  
+.border_13 {
+  display: flex;
+  border-style: solid;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: 30px solid blue;
+  border-radius: 20px;
+  box-shadow: 10px 20px gray;
+} 
+  
+

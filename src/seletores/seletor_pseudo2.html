@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletor Pseudo</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../seletores/seletor_pseudo2.html">
+</head>
+<style>  
+  /*
+    :last-child e :first-child
+    selecionam o primeiro ou o último filho de um elemento.
+  */
+  li:first-child {
+    color: red;
+  }
+
+  /*
+    :is() e :where()
+    aceitam uma lista de seletores e retornam o primeiro que corresponder.
+  */
+  p:is(.grifinoria, .luffaluffa) {
+    color: blue;
+  }
+  
+</style>
+<body>
+  
+  <ul>
+    <li>Este item será vermelho.</li>
+    <li>Este item não será afetado.</li>
+  </ul>  
+
+  <p class="grifinoria">Este parágrafo será azul.</p>
+  <p class="luffaluffa">Este parágrafo também será azul.</p>
+  <p class="sonserina">Este parágrafo não será afetado.</p>
+
+</body>
+</html>

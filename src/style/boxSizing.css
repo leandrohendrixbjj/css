@@ -4,19 +4,26 @@
 }
 body {
   background-color: cadetblue;
+  
 }
 
+/* Sem border-box o with e height da div são somados aos valores de padding
+   quando se usa o border-box os valores de with e height são respeitados
+   veja a manutenção ou alteração de valores em: Computed do Crome*/
 div{
-  width: 200px;
-  height: 200px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
   margin: 50px auto;
-  background-color: blue;
+  background-color: blue;  
+  padding: 5px 5px; 
+}
+
+h1,p {    
+  padding: 30px 50px;  
 }
 
 h1 {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 30px 50px;
   border: 20px solid;
   border-radius: 60px;
 }

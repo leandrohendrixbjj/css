@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Seletor de atributo */
+ .gimba_link[target='_blank'] {
+  color:red;
+}  
+
+/* Combinador Irmão Adjacenteo */
+h2 + p{
+  color: brown;
+}
+/* Combinador Irmão Geral */
+h3 ~ p{
+  color: pink;
+}
+/* Combinador de Filho */
+div > p{
+  color: blue;
+}
+/* Combinador de Descendente */
+.descendente p{
+  color: blue;
+}
