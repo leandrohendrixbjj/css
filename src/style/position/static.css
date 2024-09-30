@@ -1,0 +1,24 @@
+body {
+  background-color: darkgray;
+  height:180vh;
+  width:240vh;  
+}
+
+/*
+  position static: mais utilizado de todos, pois trata-se do valor que já vem padrão quando 
+  criamos o HTML. Observe que mesmo aplicado top:20px o elemento não se move para do topo, 
+  para baixo. Static não aceita as propriedades: top, bottom, left e right.
+*/
+.pai {
+  width:300px;
+  height:300px;
+  position:static;
+  background-color:green;
+  top:20px;
+}
+
+.filho {
+  width:150px; 
+  height:150px;
+  background-color: blue;
+}

@@ -1,0 +1,25 @@
+body {
+  background-color: darkgray;
+  height:180vh;
+  width:240vh;  
+}
+
+/*
+  O position sticky, que em português significa pegajoso ou colado, é parecido com o fixed, 
+  porém a sua diferença é que, em vez dele ficar fixo em relação à tela, ele fica 
+  fixo em relação ao rolamento da página.
+*/
+.pai {
+  width:300px;
+  height:300px;
+  position:sticky;
+  background-color:green;
+  top:0;
+  left:0;
+}
+
+.filho {
+  width:150px; 
+  height:150px;
+  background-color: blue;
+}

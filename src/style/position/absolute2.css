@@ -1,0 +1,27 @@
+body {
+  background-color: darkgray;
+  height:180vh;
+  width:240vh;  
+}
+
+.pai {
+  width:300px;
+  height:300px;  
+  background-color:green; 
+  margin: 150px;   
+  top:150px;
+}
+
+/*
+  O position absolute: o elemento pai não está com o position declarado. Neste caso, o 
+  elemento filho ignora o posicionamento do elemento pai, estando alinhado 50 pixels do 
+  topo e do lado esquerdo do documento.
+*/
+.filho {
+  width:150px; 
+  height:150px;
+  background-color: blue;  
+  position: absolute;
+  top:50px;
+  left: 50px;
+}
