@@ -12,8 +12,8 @@ body {
 }
 
 /*
-  O position relative: é usado quando queremos alterar a posição de um elemento tendo como
-  referência a posição inicial dele  
+  O position relative: é usado quando queremos alterar a posição de um elemento 
+  tendo como referência a posição inicial dele  
 */
 .filho {
   width:150px; 
