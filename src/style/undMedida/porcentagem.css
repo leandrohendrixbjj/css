@@ -4,8 +4,9 @@
   background-color: grey;
 }
 
-#half{
-  width:25%;
+/* Medidas em % é proporcional ao elemento pai*/
+.half{
+  width:50%;
   height:100%;
   background-color: blue;
 }

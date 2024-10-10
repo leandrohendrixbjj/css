@@ -4,13 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./src/style/reset.css">
 </head>
-<style>  
+<style>
+  html {
+    font-size: 10px;
+  }
+  .pai {
+    font-size: 20px;
+  }
+
+  img {
+    width: 10em; /* Fonte do Elemento pai <div> 200px */
+    height: 10rem; /* Fonte do Elemento <hmlt> 100px */
+  }
 </style>
-<body>  
-  <div>
-    <h1>Título</h1>     
-  </div>
+<body>
+    <div class="pai">
+      <img src="./img/border.png">
+    </div>
 </body>
 </html>
