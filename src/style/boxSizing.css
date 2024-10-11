@@ -1,29 +1,26 @@
-* {
-  font-family: inherit sans-serif;
-  color: #fff;
-}
-body {
-  background-color: cadetblue;
-  
+/* 
+   SEM o border-box, os valores de padding da classe filha são somados aos
+   valores de height e width da classe pai, com isso o border irá
+   ultrapassar as margens da classe pai. Quando se usa o border-box os valores 
+   de with e height são respeitados. Veja em Computed   
+*/
+
+* {  
+  margin: 0;
+  padding: 0;
 }
 
-/* Sem border-box o with e height da div são somados aos valores de padding
-   quando se usa o border-box os valores de with e height são respeitados
-   veja a manutenção ou alteração de valores em: Computed do Crome*/
-div{
-  box-sizing: border-box;
-  width: 400px;
-  height: 400px;
+.pai{   
+  width: 200px;
+  height: 200px;
   margin: 50px auto;
-  background-color: blue;  
-  padding: 5px 5px; 
+  background-color: blue;   
+  padding: 10px;
 }
 
-h1,p {    
-  padding: 30px 50px;  
-}
-
-h1 {
-  border: 20px solid;
-  border-radius: 60px;
+.filho{ 
+  box-sizing: border-box;   
+  width: 100%;
+  border: solid 10px;  
+  padding: 5px;
 }
