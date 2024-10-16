@@ -1,11 +1,12 @@
-div{
-  width: 600px;
-  height: 600px;
-  margin: 50px auto;
-  background-color: blue;
-}
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background-color: blue;
+}
+
+.title {
+  margin-top: 130px;
 }
