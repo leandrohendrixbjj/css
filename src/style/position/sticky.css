@@ -14,8 +14,8 @@ body {
   height:300px;
   position:sticky;
   background-color:green;
-  top:0;
-  left:0;
+  bottom:0%;
+  left:5%;
 }
 
 .filho {

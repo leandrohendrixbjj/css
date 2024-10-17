@@ -1,25 +1,33 @@
-body {
-  background-color: darkgray;
-  height:180vh;
-  width:240vh;  
-}
-
-.pai {
-  width:300px;
-  height:300px;  
-  background-color:green; 
-  margin: 150px; 
-}
-
 /*
   O position relative: é usado quando queremos alterar a posição de um elemento 
-  tendo como referência a posição inicial dele  
+  tendo como referência a SUA POSIÇÃO INICIAL. Diferente do static ele aceita bem 
+  os elementos: top,left,right e bottom.
 */
-.filho {
-  width:150px; 
-  height:150px;
-  background-color: blue;
-  position:relative;
-  top:75px;
-  left: 65px;
+
+body {
+  background-color: grey;
+  height: 180vh;
+  width: 240vh;
+}
+
+.static {
+  position: static;
+  width:100px;
+  height:100px;  
+  background-color: green;        
+}
+
+.relative {
+  position: relative;
+  width:100px;
+  height:100px;  
+  background-color: green;      
+  left:50px;
+  top: 25px;
+}
+
+p {
+  background-color: pink;
+  width:300px;
+  padding:5px;
 }
