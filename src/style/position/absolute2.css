@@ -1,27 +1,45 @@
-body {
-  background-color: darkgray;
-  height:180vh;
-  width:240vh;  
-}
-
-.pai {
-  width:300px;
-  height:300px;  
-  background-color:green; 
-  margin: 150px;   
-  top:150px;
-}
-
 /*
-  O position absolute: o elemento pai não está com o position declarado. Neste caso, o 
-  elemento filho ignora o posicionamento do elemento pai, estando alinhado 50 pixels do 
-  topo e do lado esquerdo do documento.
+  O position absolute: quando possui uma referência a sua posição se relaciona com 
+  elemento pai, desde que seja um relative, caso não seja será relacionado com
+  o body
 */
-.filho {
-  width:150px; 
-  height:150px;
-  background-color: blue;  
-  position: absolute;
-  top:50px;
-  left: 50px;
+
+body {
+  background-color: grey;
+  height: 180vh;
+  width: 240vh;
 }
+
+p {
+  background-color: pink;
+  width:300px;
+  padding:5px;
+}
+
+.static {
+  position: static;
+  width:100px;
+  height:100px;  
+  background-color: green;        
+}
+
+.relative {
+  position: relative;
+  width:200px;
+  height:200px;  
+  background-color: green;      
+  left:50px;
+  top: 25px;
+}
+
+.absolute {
+  position: absolute;
+  width:100px;
+  height:100px;  
+  background-color: blue;
+  margin: 50px 50px;
+  padding: 5px;    
+  
+}
+
+

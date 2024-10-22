@@ -1,28 +1,44 @@
-body {
-  background-color: darkgray;
-  height:180vh;
-  width:240vh;  
-}
-
-.pai {
-  width:300px;
-  height:300px;  
-  background-color:green; 
-  margin: 150px; 
-  position: relative;
-  top:150px;
-}
-
 /*
-  O position absolute: O primeiro é quando o elemento com essa propriedade possui um 
-  elemento pai de valor diferente de static. Neste caso, ele terá este elemento 
-  pai como referência para ser posicionado.
+  O position absolute: na ausência de um elemento pai do tipo relative: o elemento 
+  'descola' da sequência natural de apresentação. Sua referência passa ser o body
 */
-.filho {
-  width:150px; 
-  height:150px;
-  background-color: blue;  
-  position: absolute;
-  top:50px;
-  left: 50px;
+
+body {
+  background-color: grey;
+  height: 180vh;
+  width: 240vh;
 }
+
+p {
+  background-color: pink;
+  width:300px;
+  padding:5px;
+}
+
+.static {
+  position: static;
+  width:100px;
+  height:100px;  
+  background-color: green;        
+}
+
+.relative {
+  position: relative;
+  width:100px;
+  height:100px;  
+  background-color: green;      
+  left:50px;
+  top: 25px;
+}
+
+.absolute {
+  position: absolute;
+  width:100px;
+  height:100px;  
+  background-color: blue;   
+  top: 150px;
+  right: 150px;
+  
+}
+
+
