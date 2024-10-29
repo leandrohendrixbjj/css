@@ -1,24 +1,52 @@
-body {
-  background-color: darkgray;
-  height:180vh;
-  width:240vh;  
-}
-
 /*
-  position fixed: faz com que o elemento que recebeu esta propriedade não se mova na tela
-  Mesmo que uma página tenha rolamento (scroll).   
+  O position fixed: Mantém a posição fixa, sempre com base ao viwerPoint.
 */
-.pai {
-  width:300px;
-  height:300px;
-  position:fixed;
-  background-color:green;
-  bottom: 0%;
-  right: 5%;
+
+body {
+  background-color: grey;
+  height: 180vh;
+  width: 240vh;
 }
 
-.filho {
-  width:150px; 
-  height:150px;
-  background-color: blue;
+p {
+  background-color: pink;
+  width:300px;
+  padding:5px;
 }
+
+.static {
+  position: static;
+  width:100px;
+  height:100px;  
+  background-color: green;        
+}
+
+.relative {
+  position: relative;
+  width:200px;
+  height:200px;  
+  background-color: green;      
+  left:50px;
+  top: 25px;
+}
+
+.absolute {
+  position: absolute;
+  width:100px;
+  height:100px;  
+  background-color: blue;
+  margin: 50px 50px;
+  padding: 5px;  
+}
+
+.fixed {
+  position:fixed;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(255, 255, 255,0.5 );
+  top:0;
+  left:0;
+
+}
+
+
