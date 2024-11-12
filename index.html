@@ -5,22 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<style>
-  html {
-    font-size: 10px;
-  }
-  .pai {
-    font-size: 20px;
-  }
+<style>  
+   h1 {
+    color: red;
+   }
+   h2 {
+    color: blue;
+   }
+   h3 {
+    color: purple;
+   }
+   h4 {
+    color: greenyellow;
+   }
+   
+   /* 
+     Quando valor da tela for menor que 700px  o media será aplicado
+   */   
+   @media (max-width:700px){
+    h1 {
+      color: green;
+      background-color: aqua;
+    }
+   }
 
-  img {
-    width: 10em; /* Fonte do Elemento pai <div> 200px */
-    height: 10rem; /* Fonte do Elemento <hmlt> 100px */
-  }
+   /* 
+     Quando valor da tela estiver entre 500px e 700px o media será aplicado
+   */
+   @media (min-width:500px) and (max-width:700px) {
+    h2 {
+      color: red;
+      background-color: gold;
+    }
+   }
+
+   /* 
+     Not nega o media, nesse caso valor maior que 500px recebe o media
+   */
+   @media not (max-width:500px) {
+    h3 {
+      color: aliceblue;
+      background-color: brown;
+    }
+   }   
 </style>
 <body>
-    <div class="pai">
-      <img src="./img/border.png">
+    <div>
+       <h1>Gimba</h1>  
+       <h2>Totvs</h2>
+       <h3>Allied</h3>       
     </div>
 </body>
 </html>

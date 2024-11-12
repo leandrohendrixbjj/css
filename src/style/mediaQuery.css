@@ -1,0 +1,42 @@
+h1 {
+  color: red;
+ }
+ h2 {
+  color: blue;
+ }
+ h3 {
+  color: purple;
+ }
+ h4 {
+  color: greenyellow;
+ }
+ 
+ /* 
+   Quando valor da tela for menor que 700px  o media será aplicado
+ */   
+ @media (max-width:700px){
+  h1 {
+    color: green;
+    background-color: aqua;
+  }
+ }
+
+ /* 
+   Quando valor da tela estiver entre 500px e 700px o media será aplicado
+ */
+ @media (min-width:500px) and (max-width:700px) {
+  h2 {
+    color: red;
+    background-color: gold;
+  }
+ }
+
+ /* 
+   Not nega o media, nesse caso valor maior que 500px recebe o media
+ */
+ @media not (max-width:500px) {
+  h3 {
+    color: aliceblue;
+    background-color: brown;
+  }
+ }   
