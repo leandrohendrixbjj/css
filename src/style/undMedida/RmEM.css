@@ -4,11 +4,15 @@
 html {
   font-size: 10px;
 }
-.pai {
-  font-size: 20px;
+
+.father {
+  font-size: 5px;
 }
 
-img {
-  width: 10em; /* Fonte do Elemento pai <div> 200px */
-  height: 10rem; /* Fonte do Elemento <hmlt> 100px */
+.fromFather {
+  font-size: 5em; /* EM: Fonte será porporcional ao elemento PAI */  
+}
+
+.fromHtml{
+  font-size: 10rem; /* REM: Fonte será proporcional ao elemento  <HTML> */
 }
