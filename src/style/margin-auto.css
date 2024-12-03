@@ -1,0 +1,26 @@
+/*
+    Quando aplicado width dentro do container, é informada a % de espaço que
+    vamos oculpar na página. usando 100% junto com text-aling center,
+    nosso texto é centralizado.
+
+    Se reduzir o espaço para 50% e aplicar a margin: auto teremos o mesmo 
+    cenário que o anterior, pq quando se aplica auto o browser e quem
+    aplicar os valores para a margin.
+*/
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+ .container {
+  width: 50%;
+  margin: auto;    
+ }
+
+ .containerTwo {
+  width: 100%;    
+ }
+
+ .empresa {
+  text-align: center;
+ }

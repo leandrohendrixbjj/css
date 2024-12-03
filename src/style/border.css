@@ -118,11 +118,11 @@
 .border_12 {
   display: flex;
   justify-content: center;
-  border: 30px solid greenyellow;
-  border-radius: 20px;
   width: var(--width);
   margin: var(--margin-auto);
   margin-top: 10px;
+  border: 30px solid greenyellow;
+  border-radius: 20px;
 } 
   
 .border_13 {
