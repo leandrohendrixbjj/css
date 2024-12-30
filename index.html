@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+     * {
+      margin: 0;
+      padding: 0;
+     }
+
+     .pai {
+      width: 200px;
+      height: 200px;
+      margin: 50px auto;
+      background-color: aquamarine;
+      padding: 10px;
+     }
+
+     .filho {      
+      border: solid #000 5px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      
+     }
+   </style>   
 </head>
-<style>
-   * {
-    margin: 0;
-    padding: 0;
-   }
-
-   .container {
-    width: 50%;
-    margin: auto;    
-   }
-
-   .containerTwo {
-    width: 100%;    
-   }
-
-   .empresa {
-    text-align: center;
-   }
-</style>
 <body>
-    <div class="container">
-       <h1 class="empresa">Margin-Auto</h1>
-    </div>
+   <div class="pai">
+      <div class="filho">
+         <h1>Título</h1>
+      </div>
+   </div>
 </body>
 </html>

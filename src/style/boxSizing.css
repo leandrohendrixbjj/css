@@ -1,9 +1,12 @@
 /* 
-   SEM o border-box, os valores de padding da classe filha são somados aos
-   valores de height e width da classe pai, com isso o border irá
-   ultrapassar as margens da classe pai. Quando se usa o border-box os valores 
-   de with e height são respeitados. Veja em Computed   
-*/
+   SEM o border-box, a bordar do título ultrapassa as margens da classe Pai
+   border-box permite que os valores da classe Filho respeitem as 
+   margens da classe Pai;
+
+   1-) Importante que width da classe filho esteja em 100%
+   2-) O que faz a borda ultrapassar a margen da classe pai 
+       são valores de width e padding da classe filho
+*/  
 
 * {  
   margin: 0;
@@ -19,8 +22,8 @@
 }
 
 .filho{ 
-  box-sizing: border-box;   
-  width: 100%;
   border: solid 10px;  
+  width: 100%;  
   padding: 5px;
+  box-sizing: border-box;   
 }
