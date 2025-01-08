@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- 
+  justify-content: define o alinhamento dos ítens dentro do flex-container
+    'start': os ítens são alinhados junto à borda de início da direção do 
+    writing-mode (modo de escrita)
+    
+    'left': os ítens são alinhados junto à borda ESQUERDA do container. Se não fizer
+    sentido com flex-direction será considerado start.
+
+    'right': os ítens são alinhados junto à borda DIREITA do container. Se não fizer
+    sentido com flex-direction será considerado start.
+
+    'center': os ítens são centralizados na linha.
+
+    'space-between': os ítens são distribuídos de forma igual ao longo da linha
+
+    Existem mais essas opções: flex-start, flex-end,end,space-around,space-evenly
+ -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style/reset.css">
+   <title>Document</title>
+   <style>
+      .flex-container {
+         width: 200px;
+         height: 200px;
+         margin: 50px auto;
+         background-color: aqua;
+         
+         display: flex; 
+         justify-content: center;
+      }
+   </style>
+</head>
+<body>
+   <div class="flex-container">
+      <div class="flex-items1">1</div>
+      <div class="flex-items2">2</div>
+      <div class="flex-items3">3</div>
+   </div>
+</body>
+</html>

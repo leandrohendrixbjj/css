@@ -5,33 +5,27 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-     * {
-      margin: 0;
-      padding: 0;
-     }
+      * {
+         margin: 0;
+         padding: 0;
+      }
 
-     .pai {
-      width: 200px;
-      height: 200px;
-      margin: 50px auto;
-      background-color: aquamarine;
-      padding: 10px;
-     }
+      .container {
+        width: 150px;
+        height: 150px;
+        background-color: aqua;
+        margin: 50px auto;  
 
-     .filho {      
-      border: solid #000 5px;
-      width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-      
-     }
-   </style>   
+        display: flex;
+        flex-direction: column-reverse;
+      }
+   </style>
 </head>
 <body>
-   <div class="pai">
-      <div class="filho">
-         <h1>Título</h1>
-      </div>
+   <div class="container">
+      <div class="items1">1</div>
+      <div class="items2">2</div>
+      <div class="items3">3</div>
    </div>
 </body>
 </html>

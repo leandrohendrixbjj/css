@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- 
+  flex-direction: estabelece a direção em que os filhos são alinhados 
+    'row': alinhados a esquerda ( Default )
+    'row-reverse': alinhados a direita
+
+    'column': malinhados a esquerda para baixo
+    'column-reverse': alinhados a direita para baixo
+ -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style/reset.css">
+   <title>Document</title>
+   <style>
+      .flex-container {
+         display: flex; 
+         flex-direction: column; 
+         width: 200px;
+         height: 200px;
+         margin: 50px auto;
+         background-color: aqua;
+      }
+   </style>
+</head>
+<body>
+   <div class="flex-container">
+      <div class="flex-items1">1</div>
+      <div class="flex-items2">2</div>
+      <div class="flex-items3">3</div>
+   </div>
+</body>
+</html>
