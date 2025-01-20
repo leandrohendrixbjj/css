@@ -5,27 +5,115 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
+
+      :root{
+         --container-color: aqua;
+         --menu-color: red;
+         --items-color: blue;
+      }
+
       * {
          margin: 0;
          padding: 0;
       }
 
       .container {
-        width: 150px;
-        height: 150px;
-        background-color: aqua;
-        margin: 50px auto;  
-
+        width: 200px;
+        height: 200px;
+        background-color: var(--container-color);
+        margin: 50px auto;     
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
+        justify-content:space-between;     
+        
+      }
+
+      .menu {
+         width: 40px;
+         height: 25px;
+         background-color: var(--menu-color);
+         margin: 50px auto;
+         padding: 0;
+      }
+
+      .items {
+         width: 40px;
+         height: 25px;
+         background-color: var(--items-color);
+         margin: 50px auto;      
+         padding: 0;   
       }
    </style>
 </head>
 <body>
    <div class="container">
-      <div class="items1">1</div>
-      <div class="items2">2</div>
-      <div class="items3">3</div>
+      <div class="menu"></div>
+      <div class="items"></div>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+
+      :root{
+         --container-color: aqua;
+         --menu-color: red;
+         --items-color: blue;
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: var(--container-color);
+        margin: 50px auto;     
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;     
+        
+      }
+
+      .menu {
+         width: 40px;
+         height: 25px;
+         background-color: var(--menu-color);
+         margin: 50px auto;
+         padding: 0;
+      }
+
+      .items {
+         width: 40px;
+         height: 25px;
+         background-color: var(--items-color);
+         margin: 50px auto;      
+         padding: 0;   
+      }
+
+      .items {
+         width: 40px;
+         height: 25px;
+         background-color: var(--items-color);
+         margin: 50px auto;      
+         padding: 0;   
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="menu"></div>
+      <div class="items"></div>
+      <div class="outros"></div>
    </div>
+   
+</body>
+</html>
+   </div>
+   
 </body>
 </html>
