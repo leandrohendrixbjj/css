@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <!-- 
-  justify-content: define o alinhamento dos ítens na VERTICAL 
+  align-items: define o alinhamento dos ítens na HORIZONTAL
+
+    'left': os ítens são alinhados junto à borda ESQUERDA do container. 
+
+    'right': os ítens são alinhados junto à borda DIREITA do container. 
+
+    'center': os ítens são centralizados na linha.   
     
-    'left': os ítens são alinhados junto à borda ESQUERDA do container. Se não fizer
-    sentido com flex-direction será considerado start.
-
-    'right': os ítens são alinhados junto à borda DIREITA do container. Se não fizer
-    sentido com flex-direction será considerado start.
-
-    'center': os ítens são centralizados na linha.
-
-    'space-between': os ítens são distribuídos de forma igual ao longo da linha
-
-    Existem mais essas opções: flex-start, flex-end,end,space-around,space-evenly
  -->
 <head>
    <meta charset="UTF-8">
@@ -28,7 +23,9 @@
          background-color: aqua;
          
          display: flex; 
+         flex-direction: column;
          justify-content: center;
+         align-items: center;
       }
    </style>
 </head>
