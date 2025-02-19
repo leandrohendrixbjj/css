@@ -11,19 +11,19 @@ body {
 }
 
 .static {
+  background-color: green;
   position: static;
-  width:100px;
   height:100px;  
-  background-color: green;        
+  width:100px;          
 }
 
 .relative {
-  position: relative;
-  width:100px;
-  height:100px;  
   background-color: green;      
-  left:50px;
+  position: relative;
+  height:100px;  
+  width:100px;  
   top: 25px;
+  left:50px;  
 }
 
 p {

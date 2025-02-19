@@ -1,28 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Border</title>
-  <link rel="stylesheet" href="./style/reset.css">
-  <link rel="stylesheet" href="./style/border.css">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-color: gray;
+      height: 100vh;
+      width: 100vh;
+    }
+
+    .static {
+      background-color: green;
+      position: static;
+      height:50px;
+      width: 300px;
+      top:50px;      
+    }
+
+    .relative {
+      background-color: turquoise;
+      position: relative;
+      height: auto;
+      width: auto;
+      left:400px;
+      top:100px;
+      
+    }
+
+    .absolute {
+      background-color: blueviolet;
+      position: absolute;
+      height: auto;
+      width: auto;
+      bottom: 50px;
+      left: 10px;
+    }
+
+    p {
+      background-color: pink;
+      width: 300px;
+      padding: 5px;
+    }
+  </style>
 </head>
-
 <body>
-  <h1 class="border_1">Border_1</h1>
-  <h1 class="border_2">Border_2</h1>
-  <h1 class="border_3">Border_3</h1>
-  <h1 class="border_4">Border_4</h1>
-  <h1 class="border_5">Border_5</h1>
-  <h1 class="border_6">Border_6</h1>
-  <h1 class="border_7">Border_7</h1>
-  <h1 class="border_8">Border_8</h1>
-  <h1 class="border_9">Border_9</h1>
-  <h1 class="border_10">Border_10</h1>
-  <h1 class="border_11">Border_11</h1>
-  <h1 class="border_12">Border_12</h1>
-  <h1 class="border_13">Border_13</h1>
+  <p>Leandro Soares Ribeiro</p>
+  
+  <div class="static">
+    Ramon Gonzales Alberto del Mar <b>( STATIC )</b> 
+  </div>
+  
+  <div class="relative">
+    Jose Almeida Carvalho de Brangança Paulista <b>( RELATIVE )</b>
+  </div>
+    
+  <div class="absolute">
+    Maria Macedo de Alcantara Alves Reis <b>( ABSOLUTE )</b>
+  </div>
+  
+  <p>Papa Capim de Oliveira Jose Ferreira</p>
 </body>
-
 </html>

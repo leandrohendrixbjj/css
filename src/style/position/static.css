@@ -1,7 +1,7 @@
 /*
-  position static: Elemento padrão e apresenta os items
+  position static: Elemento padrão que apresenta os items
   na sequência da qual eles são criados. 
-  Static não aceita as propriedades: top, bottom, left e right.
+  Static: não aceita as propriedades: top, bottom, left e right.
 */
 
 body {
@@ -11,11 +11,11 @@ body {
 }
 
 .static {
+  background-color: green;
   position: static;
-  width:100px;
-  height:100px;  
-  background-color: green;      
-  top:50px;
+  height:20px;  
+  width:230px;
+  top:50px; /* Ignora essa Propriedade e as demais: left,right,bottom */
 }
 
 p {
