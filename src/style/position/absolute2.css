@@ -17,29 +17,28 @@ p {
 }
 
 .static {
+  background-color: green;
   position: static;
-  width:100px;
   height:100px;  
-  background-color: green;        
+  width:100px;  
 }
 
 .relative {
+  background-color: green;
   position: relative;
-  width:200px;
   height:200px;  
-  background-color: green;      
-  left:50px;
+  width:200px;
   top: 25px;
+  left:50px;  
 }
 
 .absolute {
-  position: absolute;
-  width:100px;
-  height:100px;  
   background-color: blue;
+  position: absolute;
+  height:100px;
+  width:100px;
   margin: 40px 50px;
-  padding: 5px;    
-  
+  padding: 5px;
 }
 
 
