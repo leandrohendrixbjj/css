@@ -1,15 +1,30 @@
-/*
- :last-child e :first-child
- selecionam o primeiro ou o último filho de um elemento.
-*/
-li:first-child {
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+  
+/* :first-child selecionam o primeiro elemento. */  
+.first li:first-child {
   color: red;
 }
 
+/* :first-child selecionam o último elemento. */  
+.last li:last-child {
+  color: green;
+}
+
 /*
-  :is() e :where()
-  aceitam uma lista de seletores e retornam o primeiro que corresponder.
+  :is => aceitam uma lista de seletores e marca os corresponder.
 */
 p:is(.grifinoria, .luffaluffa) {
   color: blue;
 }
+
+/*
+  :where => aceitam uma lista de seletores e marca os corresponder.
+*/
+p:where(.sonserina) {
+  color: purple;
+}  
