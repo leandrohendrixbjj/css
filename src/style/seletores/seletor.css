@@ -2,27 +2,32 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: center;
+  text-align: center;
+}
+
+.link {
+  font-size: 30px;
 }
 
 /* Seletor de atributo */
- .gimba_link[target='_blank'] {
+ .link[target='_blank'] {
   color:red;
 }  
 
-/* Combinador Irmão Adjacenteo */
-h2 + p{
+/* Adjacenteo (+) */
+.adjacento h2 + p{
   color: brown;
 }
-/* Combinador Irmão Geral */
-h3 ~ p{
-  color: pink;
+/* Irmão (~) */
+.irmao h2 ~ p{
+  color: green;
 }
-/* Combinador de Filho */
-div > p{
+
+/* Filho */
+.filho > p{
   color: blue;
 }
-/* Combinador de Descendente */
+/* Descendente */
 .descendente p{
   color: blue;
 }

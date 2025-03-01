@@ -11,24 +11,34 @@
 
 <body>
   <main>
-    <a class="gimba_link" href="www.gimba.com.br" target="_blank">Gimba</a>
+    <a class="link" href="https://alura.com.br" target="_blank">Alura</a>
 
-    <h2>Título</h2>
-    <p>Este parágrafo será marrom.</p>
-    <p>Este parágrafo não será afetado.</p>
+    <hr/>
+    <div class="adjacento">
+      <h2>Adjacento ( + )</h2>
+      <p>Este parágrafo será marrom.</p>
+      <p>Este parágrafo não será afetado.</p>
+    </div>    
+    
+    <hr />
+    <div class="irmao">
+      <h2>Irmão ( ~ )</h2>
+      <p>Este parágrafo será verde.</p>
+      <p>Este parágrafo também será verde.</p>
+    </div>  
 
-    <h3>Título</h3>
-    <p>Este parágrafo será rosa.</p>
-    <p>Este parágrafo também será rosa.</p>
-
-    <div>
+    <hr />
+    <div class="filho">
+      <h2>Filho( > )</h2>
       <p>Este parágrafo será azul.</p>
       <span>
-        <p>Este parágrafo não será azul, pois não é um filho direto do div.</p>
+        <p>Este parágrafo não será azul, pois não é um filho direto da div filho.</p>
       </span>
     </div>
 
+    <hr />
     <div class="descendente">
+      <h2>Descendente( tagName )</h2>
       <p>Este parágrafo será azul.</p>
       <span>
         <p>Este parágrafo também será azul, mesmo não sendo um filho direto do div.</p>

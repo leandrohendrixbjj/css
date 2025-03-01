@@ -1,3 +1,11 @@
+<!-- 
+ 1-) Atributo []
+ 2-) irmão +
+ 3-) Geral ~
+ 4-) Filho >
+ 5-) Descendente tag
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,93 +14,79 @@
   <title>Document</title>
   <style>
     * {
-      margin: 0;
-      padding: 0;
+      margin:0;
+      padding:0;
     }
 
-    .static {
-      background-color: aqua;
-      height: 20px;
-      width: 80px;
-      padding: 5px;
-      position: static;
-      top: 10px;
+    main{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      text-align: center;
     }
 
-    .relative {
-      background-color: blue;
-      height: 20px;
-      width: 90px;
-      padding: 5px;
-      position: relative;
-      top: 300px;
-      left: 400px;
+    .link {
+      font-size: 30px;
     }
 
-    .absolute {
-      background-color: blueviolet;
-      height: 20px;
-      width: 90px;
-      padding: 5px;
-      position: absolute;
-      left: 500px;
-      top: 200px;
+    .link[target='_blank'] {
+      color: palevioletred;
     }
 
-    .relative_ab {
-      background-color: chocolate;
-      height: 20px;
-      width: 130px;
-      padding: 5px;
-      position: relative;
+    .irmao h2 + p {
+      color: blue;
     }
 
-    .absoule_ab {
-      background-color: chartreuse;
-      height: 20px;
-      width: 130px;
-      padding: 5px;
-      position: absolute;
-      left: 120px;
-      bottom:70px;
+    .geral h2 ~ p {
+      color: green;
     }
 
-    .fixed {
-      background-color: crimson;
-      height: 20px;
-      width: 130px;
-      padding: 5px;
-      position: fixed;
-      left: 50px;
+    .filho h2 + p {
+      color: purple;
     }
+
+    .descendente p {
+      color: purple;
+    }
+
   </style>
 </head>
 <body>
-  <p>Titulo_1</p>
-  
-  <div class="static">
-    <b>STATIC</b>
-  </div>  
+    <main>
+      <a href="http://movida.com.br" class="link" target="_blank">Movida</a>
+      
+      <hr/>
+      <div class="irmao">
+        <h2>IRMÃO</h2>
+        <p>Este parágrafo será Azul</p>
+        <p>Este parágrado não será Azul</p>
+      </div>   
 
-  <div class="relative">
-    <b>RELATIVE</b>
-  </div>
+      <hr/>
+      <div class="geral">
+        <h2>GERAL</h2>
+        <p>Este parágrafo será verde</p>
+        <p>Este parágrado não será verde</p>
+      </div>  
+      
+      <hr/>
+      <div class="filho">
+        <h2>FILHO</h2>
+        <p>Este parágrafo será roxo</p>
+        <span> 
+          <p>Este parágrado não será roxopois não é filho da div</p>
+        </span>  
+      </div> 
 
-  <div class="absolute">
-    <b>ABSOLUTE</b>
-  </div>
+      <hr/>
+      <div class="descendente">
+        <h2>Descendente</h2>
+        <p>Este parágrafo será roxo</p>
+        <span> 
+          <p>Este parágrado não será roxo pois é descendente de div</p>
+        </span>  
+      </div> 
 
-  <div class="relative_ab">
-    <b>RELATIVE_AB</b>
-    <div class="absoule_ab">
-      <b>ABSOLUTE_AB</b>  
-    </div>
-  </div>
-
-  <div class="fixed">
-    <b>FIXED</b>
-  </div>
-  
-  <p>Titulo_end</p>
+    </main>
 </body>
 </html>
