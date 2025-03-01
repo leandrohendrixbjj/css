@@ -1,46 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+.child{
+  color: black;
+}
+
 /* 
-   As pseudo-classes :nth-child() 
-   selecionam elementos baseados em sua posição entre os irmãos.
-  */
-  li:nth-child(2) {
-    color: red;
-  }
-  /* 
-    :not, é uma forma de negação. Ela seleciona todos os elementos que 
-     não correspondem ao seletor dentro dos parênteses.
-  */
-  div:not(.classe) {
-    color: blue;
-  }
+  As pseudo-classes :nth-child() 
+  selecionam elementos baseados em sua posição entre os irmãos.
+*/
+li:nth-child(2) {
+  color: red;
+}
 
-  /* 
-    :hover, aplica estilos a um elemento quando o cursor do mouse está sobre ele.  
-  */
-  button:hover {
-    background-color: yellow;
-  }
+/* 
+  :not, é uma forma de negação. Ela seleciona todos os elementos que 
+  não correspondem ao seletor dentro dos parênteses.
+*/
+.container div:not(.divWithNotClasse,.coramila,.border) {
+  color: blue;
+}
 
-  /* 
-    :before and :after
-     permitem a adição de conteúdo antes ou depois do conteúdo de um elemento.  
-  */
-  p:before {
-    content: "Coramila: ";
-  }
+/* 
+  :hover, aplica estilos a um elemento quando o cursor do mouse está sobre ele.  
+*/
+button:hover {
+  background-color: yellow;
+}
 
-  /* 
-    :has
-    seleciona um elemento se ele contém um determinado elemento dentro dele.
-  */
-  div:has(p) {
-    border: 10px solid black;
-    padding: 0 8.5px;
-  }
+/* 
+  :before and :after
+  permitem a adição de conteúdo antes ou depois do conteúdo de um elemento.  
+*/
+.coramila p:before {  
+  content: "Coramila: ";
+}
 
-  /* 
-   :empty seleciona todos os elementos que não têm filhos.
-  */ 
-  div:empty {
-    display: none;
-  } 
+/* 
+  :has
+  seleciona um elemento se ele contém um determinado elemento dentro dele.
+*/
+.border:has(p) {
+  border: 10px solid black;
+  padding: 0 8.5px;
+  color: purple;
+}
+
+/* 
+  :empty seleciona todos os elementos que não têm filhos.
+*/ 
+div:empty {
+  display: none;
+} 
   

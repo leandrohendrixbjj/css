@@ -1,11 +1,3 @@
-<!-- 
- 1-) Atributo []
- 2-) irmão +
- 3-) Geral ~
- 4-) Filho >
- 5-) Descendente tag
--->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,80 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    * {
-      margin:0;
-      padding:0;
+    li:nth-child(2){
+      color: red;
     }
 
-    main{
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      text-align: center;
-    }
-
-    .link {
-      font-size: 30px;
-    }
-
-    .link[target='_blank'] {
-      color: palevioletred;
-    }
-
-    .irmao h2 + p {
+    div:not(.classe,.has) {
       color: blue;
     }
 
-    .geral h2 ~ p {
-      color: green;
+    button:hover {
+      background-color: yellow;
     }
 
-    .filho h2 + p {
-      color: purple;
+    .coramila p:before{
+      content: "Coromila";
     }
 
-    .descendente p {
-      color: purple;
+    .has:has(p){
+      border: 10px solid black;
+      padding: 0 8.5px;
     }
 
+    .div:empty{
+      color: brown;
+    }
   </style>
 </head>
 <body>
-    <main>
-      <a href="http://movida.com.br" class="link" target="_blank">Movida</a>
-      
-      <hr/>
-      <div class="irmao">
-        <h2>IRMÃO</h2>
-        <p>Este parágrafo será Azul</p>
-        <p>Este parágrado não será Azul</p>
-      </div>   
+  <ul>
+    <li>Este item não será afetado.</li>
+    <li>Este item será vermelho.</li>
+    <li>Este item não será afetado.</li>
+  </ul>
 
-      <hr/>
-      <div class="geral">
-        <h2>GERAL</h2>
-        <p>Este parágrafo será verde</p>
-        <p>Este parágrado não será verde</p>
-      </div>  
-      
-      <hr/>
-      <div class="filho">
-        <h2>FILHO</h2>
-        <p>Este parágrafo será roxo</p>
-        <span> 
-          <p>Este parágrado não será roxopois não é filho da div</p>
-        </span>  
-      </div> 
+  <div class="classe">Este div não será azul.</div>
+  <div>Este div será azul.</div>
 
-      <hr/>
-      <div class="descendente">
-        <h2>Descendente</h2>
-        <p>Este parágrafo será roxo</p>
-        <span> 
-          <p>Este parágrado não será roxo pois é descendente de div</p>
-        </span>  
-      </div> 
+  <button>Quando você passar o mouse por cima, este botão será amarelo.</button>
+  
+  <div class="coramila">
+    <p>Este parágrafo terá "Coramila: " antes de seu texto. Coramila é um pseudônimo para Camila.</p>
+  </div>  
 
-    </main>
+  <div class="has">
+    <p>Este div terá uma borda, pois contém um parágrafo.</p>
+  </div>
+  <div class="has">Este div não terá uma borda, pois não contém um parágrafo.</div>
+
+  
 </body>
 </html>

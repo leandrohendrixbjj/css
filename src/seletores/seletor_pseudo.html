@@ -8,27 +8,39 @@
   <link rel="stylesheet" href="../style/seletores/pseudo.css">
 </head>
 <body>
+  <div class="container">
+
+    <span class="child">
+      <h2>nth-child()</h2>
+      <ul>
+        <li>Este item não será afetado.</li>
+        <li>Este item será vermelho.</li>
+        <li>Este item não será afetado.</li>
+      </ul>
+    </span>  
+    
+    <hr/>
+    <div class="divWithNotClasse">Este div não será azul.</div>
+    <div>Este div será azul.</div>
+    
+    <hr />
+    <div class="button">
+      <button>Quando você passar o mouse por cima, este botão será amarelo.</button>
+    </div>  
+    
+    <hr />
+    <div class="coramila">
+      <p>Este parágrafo terá "Coramila: " antes de seu texto. Coramila é um pseudônimo para Camila.</p>
+    </div>
+
+    <hr />
+    <div class="border">
+      <p>Este div terá uma borda, pois contém um parágrafo.</p>
+    </div>
+    <div class="border">Este div não terá uma borda, pois não contém um parágrafo.</div>
   
-  <ul>
-    <li>Este item não será afetado.</li>
-    <li>Este item será vermelho.</li>
-    <li>Este item não será afetado.</li>
-  </ul>
-
-  <div class="classe">Este div não será azul.</div>
-  <div>Este div será azul.</div>
-
-  <button>Quando você passar o mouse por cima, este botão será amarelo.</button>
-
-  <p>Este parágrafo terá "Coramila: " antes de seu texto. Coramila é um pseudônimo para Camila.</p>
-
-  <div>
-    <p>Este div terá uma borda, pois contém um parágrafo.</p>
-  </div>
-  <div>Este div não terá uma borda, pois não contém um parágrafo.</div>
-
-  <div>Este div será exibido.</div>
-  <div></div> <!-- Este div não será exibido, pois está vazio. -->
-
+    <div class="divNotEmpty">Este div será exibido.</div>
+    <div></div> <!-- Este div não será exibido, pois está vazio. -->
+  </div> 
 </body>
 </html>
