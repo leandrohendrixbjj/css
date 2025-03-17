@@ -1,66 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Position Static</title>
+  <title>Position</title>
   <link rel="stylesheet" href="./src/style/reset.css">
   <style>
-    body{
-      background-color: gray;
+    .staticContainer{
+      background-color: aqua;
+      padding: 5px;
+            
+      display: flex;
+      flex-direction: column;      
+      align-items: center;      
     }
 
-    .containerStatic {
+    .static{
+      background-color: green;
+      padding: 5px;
+      position: static;
+      top:50px;
+    }
+
+    .relativeContainer {
+      background-color: greenyellow;
+      padding: 5px;
+
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .staticp{
-      background-color: pink;
-      padding: 5px;
-    }
-
-    .static{
-       background-color: green;
-       padding: 5px;       
-
-       position: static;
-       top: 100px;
-    }
-
-    .staticr{
-      width: 60vh;
-      background-color: purple;
-      padding: 5px;
-    }
-
     .relative {
-      width: 10vh;
-      background-color: blue;
+      background-color: aqua;
       padding: 5px;
 
       position: relative;
-      left: 200px;
-      top:60px;
+      left: 300px;
+      top:25px;
+    }
+
+    .absoluteContainer {
+      background-color: pink;
+      padding: 5px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .absolute {
+      background-color: pink;
+      padding: 5px;
+
+      position: absolute;
+      bottom: 20px;
+      left: 100px;
+    }
+
+    .absoluteComRelativeContainer {
+      background-color: cornflowerblue;
+      padding: 5px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      position: relative;
+      
+    }
+
+    .absoluteComRelative {
+      background-color: purple;
+      padding: 5px;
+
+      position: absolute;
+      right: 30px;
+    }
+
+    .fixedContainer {
+      background-color: black;
+      color: aliceblue;
+      padding: 5px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .fixed {
+      background-color: rgba(255, 255, 255,0.5 );
+      padding: 5px;
+      color: blue;
+
+      position: fixed;
+      top:0;
+      left:0;
     }
   </style>
 </head>
+
 <body>
-   <div class="containerStatic">
-    <p class="staticp">Este é o PRIMEIRO parágrafo do elemento STATIC</p>
+  <div class="staticContainer">
+    <p>Este é o primeiro parágrafo para STATIC position</p>
     <div class="static">
       <b>STATIC</b>
     </div>
-    <p class="staticp">Este é o SEGUNDO parágrafo do elemento STATIC</p>
-  </div>  
-   
-   <br />
+    <p>Este é o segundo parágrafo para STATIC position</p>
+  </div>
+  
+  <br />
 
-   <p class="staticr">Este é o PRIMEIRO parágrafo do elemento RELATIVE</p>
-   <div class="relative">
-    <b>RELTIVE</b>
-   </div>
-   <p class="staticr">Este é o SEGUNDO parágrafo do elemento RELATIVE</p>
+  <div class="relativeContainer">
+    <p>Este é o primeiro parágrafo para RELATIVE position</p>
+    <div class="relative">
+      <b>RELATIVE</b>
+    </div>
+    <p>Este é o segundo parágrafo para RELATIVE position</p>
+  </div>
+
+  <br />
+
+  <div class="absoluteContainer">
+    <p>Este é o primeiro parágrafo para ABSOLUTE position</p>
+    <div class="absolute">
+      <b>ABSOLUTE</b>
+    </div>
+    <p>Este é o segundo parágrafo para ABSOLUTE position</p>
+  </div>
+
+  <br />
+
+  <div class="absoluteComRelativeContainer">
+    <p>Este é o primeiro parágrafo para ABSOLUTE com RELATIVE position</p>
+    <div class="absoluteComRelative">
+      <b>ABSOLUTE com RELATIVE</b>
+    </div>
+    <p>Este é o segundo parágrafo para ABSOLUTE com RELATIVE position</p>
+  </div>
+
+  <br />
+
+  <div class="fixedContainer">
+    <p>Este é o primeiro parágrafo para FIXED position</p>
+    <div class="fixed">
+      <b>FIXED</b>
+    </div>
+    <p>Este é o segundo parágrafo para FIXED position</p>
+  </div>
 </body>
+
 </html>
