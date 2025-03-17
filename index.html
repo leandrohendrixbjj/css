@@ -1,57 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Position Static</title>
+  <link rel="stylesheet" href="./src/style/reset.css">
   <style>
-    li:nth-child(2){
-      color: red;
+    body{
+      background-color: gray;
     }
 
-    div:not(.classe,.has) {
-      color: blue;
+    .containerStatic {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    button:hover {
-      background-color: yellow;
+    .staticp{
+      background-color: pink;
+      padding: 5px;
     }
 
-    .coramila p:before{
-      content: "Coromila";
+    .static{
+       background-color: green;
+       padding: 5px;       
+
+       position: static;
+       top: 100px;
     }
 
-    .has:has(p){
-      border: 10px solid black;
-      padding: 0 8.5px;
+    .staticr{
+      width: 60vh;
+      background-color: purple;
+      padding: 5px;
     }
 
-    .div:empty{
-      color: brown;
+    .relative {
+      width: 10vh;
+      background-color: blue;
+      padding: 5px;
+
+      position: relative;
+      left: 200px;
+      top:60px;
     }
   </style>
 </head>
 <body>
-  <ul>
-    <li>Este item não será afetado.</li>
-    <li>Este item será vermelho.</li>
-    <li>Este item não será afetado.</li>
-  </ul>
-
-  <div class="classe">Este div não será azul.</div>
-  <div>Este div será azul.</div>
-
-  <button>Quando você passar o mouse por cima, este botão será amarelo.</button>
-  
-  <div class="coramila">
-    <p>Este parágrafo terá "Coramila: " antes de seu texto. Coramila é um pseudônimo para Camila.</p>
+   <div class="containerStatic">
+    <p class="staticp">Este é o PRIMEIRO parágrafo do elemento STATIC</p>
+    <div class="static">
+      <b>STATIC</b>
+    </div>
+    <p class="staticp">Este é o SEGUNDO parágrafo do elemento STATIC</p>
   </div>  
+   
+   <br />
 
-  <div class="has">
-    <p>Este div terá uma borda, pois contém um parágrafo.</p>
-  </div>
-  <div class="has">Este div não terá uma borda, pois não contém um parágrafo.</div>
-
-  
+   <p class="staticr">Este é o PRIMEIRO parágrafo do elemento RELATIVE</p>
+   <div class="relative">
+    <b>RELTIVE</b>
+   </div>
+   <p class="staticr">Este é o SEGUNDO parágrafo do elemento RELATIVE</p>
 </body>
 </html>
